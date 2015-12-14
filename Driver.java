@@ -130,8 +130,9 @@ public class Driver
        System.out.println("2. Edit Menu");
        System.out.println("3. See Reviews");
        System.out.println("4. Delete User");
+       System.out.println("5. GetInfo");
        String Userinput = input.next();
-       if(Userinput.equals("1") || Userinput.equals("2") ||Userinput.equals("3") || Userinput.equals("4"))
+       if(Userinput.equals("1") || Userinput.equals("2") ||Userinput.equals("3") || Userinput.equals("4") || Userinput.equals("5"))
        {
            validInput= true; 
            switch(Userinput)
@@ -144,6 +145,7 @@ public class Driver
                break;
                case "4": deleteUser(user);
                break;
+               case "5" : getInfo();
             }
         }
         else{   
@@ -181,8 +183,9 @@ public class Driver
         System.out.println("1. Search for Restaurant");
         System.out.println("2. Write Review");
         System.out.println("3. Delete User");
+        System.out.println("4. Get Info");
         String Userinput = input.next();
-        if(Userinput.equals("1") || Userinput.equals("2") || Userinput.equals("3"))
+        if(Userinput.equals("1") || Userinput.equals("2") || Userinput.equals("3") || Userinput.equals("4"))
         {validInput = true;
            switch(Userinput)
         {
@@ -192,6 +195,8 @@ public class Driver
                 break;
             case "3": deleteUser(user);
                 break;
+            case "4": getInfo();
+            	break;
         }  
         }
          else{
@@ -362,8 +367,18 @@ public class Driver
         users.add(new User("name", "logIn", "passsWord", true));
         users.add(new RestaurantAccount("Black Bean", "BlackBean1", "1234",true, null, null, "8648848611", "429 King St"));
         users.add(new User("Reagan", "Reagan", "yourawesome", false));
+        
+       
+        
         return users;
         
+    }
+    
+    public void getInfo()
+    {
+    	  for (User u : users) {
+          	System.out.println(u.toString());
+          }
     }
     
    /* public ArrayList<RestaurantAccount> tester2(ArrayList<User> user)

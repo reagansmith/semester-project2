@@ -8,7 +8,7 @@
  */
 public class User
 {
-	 private String name;
+	protected String name;
     private String logIn;
     private String passWord;
     private boolean isARest; 
@@ -75,6 +75,10 @@ public class User
     }
 
 
+    public String toString()
+    {
+    	return name; 
+    }
 }
 
 

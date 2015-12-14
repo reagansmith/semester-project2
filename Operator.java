@@ -11,12 +11,7 @@
 public class Operator 
 {
   
-    
- /*   public Calendar(Event planner)
-    {
-        this.planner = planner;
-    }
-   */ 
+ 
 }
 
 

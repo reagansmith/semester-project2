@@ -98,8 +98,14 @@ public class RestaurantAccount extends User
      {
          this.address= address;
      }
+     
+     public String toString()
+     {
+    	 return name + " " + phoneNum;
+     }
+     }
 
    
- }
+ 
 
 
