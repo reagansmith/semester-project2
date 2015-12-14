@@ -16,7 +16,7 @@ If you choose 3. Delete User you can delete your account.
 
 #Logged in as a restaurant 
 
-The restaurant switch menu has 4 options. The first options is See Resturant Menu. The resturant's menu is haved in a txt file called readmenu. The readmenu method is in the menu class. In the class there is a try catch that says file not found if something goes wrong. The menu file is a variable that can be easily changed. 
+The restaurant switch menu has 4 options. The first options is See Resturant Menu. The resturant's menu is haved in a txt file called readmenu. The readmenu method is in the menu class. In the class there is a try catch that says file not found if something goes wrong. The menu file is a variable that can be easily changed. This is an example of polymorphism  
 
 The second option is to edit the menu. When you do this the changes are written to the menu file. 
 
