@@ -12,13 +12,13 @@ public class RestaurantAccount extends User
 {
    
     private Menu menu;
-    private Calendar calendar;
+    private Operator calendar;
     private String phoneNum;
     private String address;
    
 
     
-    public RestaurantAccount ( String name, String logIn, String passWord, boolean isARest, Menu menu, Calendar calendar, String phoneNum, String address)
+    public RestaurantAccount ( String name, String logIn, String passWord, boolean isARest, Menu menu, Operator calendar, String phoneNum, String address)
     {
       
         super(name, logIn, passWord, isARest);
@@ -36,7 +36,7 @@ public class RestaurantAccount extends User
         return menu;
     }
     
-    public Calendar getCalendar()
+    public Operator getCalendar()
     {
         return calendar;
     }
@@ -46,7 +46,7 @@ public class RestaurantAccount extends User
         this.menu= menu;
     }
     
-    public void  setCalendar(Calendar calendar)
+    public void  setCalendar(Operator calendar)
     {
         this.calendar = calendar;
     }

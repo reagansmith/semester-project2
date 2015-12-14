@@ -237,19 +237,21 @@ public class Driver
     	        	{
     	        		
     	        		found = true;
+    	        		System.out.println("Resturant found");
     	        		
     	        	}
     	        	else
     	        	{
     	        		found = false;
+    	        		System.out.println("Not found");
     	        	}
     	        	
     	        }
     	    
-    	        if(found)
-    	        {
-    	        System.out.println("Resturant found");
-    	        }
+    	       // if(found)
+    	        //{
+    	       // System.out.println("Resturant found");
+    	      //  }
     	    
     	    }
     
